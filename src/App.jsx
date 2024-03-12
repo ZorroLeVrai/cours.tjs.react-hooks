@@ -9,7 +9,8 @@ import UseEffectDemos from './components/useEffect/UseEffectDemos';
 import UseRefDemo from './components/UseRefDemo';
 import UseReducerDemo from './components/useReducer/UseReducerDemo';
 import { UseContextDemo } from './components/useContext/UseContextDemo';
-import UseMemoDemo from './components/useMemo/UseMemoDemo';
+import UseMemoDemo from "./components/useMemo/UseMemoDemo";
+import UseCallbackDemo from './components/useCallBack/UseCallbackDemo';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/useReducer" element={<UseReducerDemo />} />
             <Route path="/useContext" element={<UseContextDemo />} />
             <Route path="/useMemo" element={<UseMemoDemo />} />
+            <Route path="/useCallback" element={<UseCallbackDemo />} />
             <Route path="*" element={<div>Page inexistante</div>} />
           </Route>
         </Routes>
