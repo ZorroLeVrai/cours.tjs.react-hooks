@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import styles from "./Global.module.css";
+import styles from "../Global.module.css";
 
 const UseEffectDemo = () => {
   const localStorageItemName = "counter";

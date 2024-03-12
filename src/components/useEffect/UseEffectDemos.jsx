@@ -1,6 +1,6 @@
 import UseEffectDemo from "./UseEffectDemo";
 import UseEffectDemo2 from "./UseEffectDemo2";
-import styles from "./Global.module.css";
+import styles from "../Global.module.css";
 
 function UseEffectDemos() {
   const divStyle = [styles.border, styles.marginTop].join(" ");
