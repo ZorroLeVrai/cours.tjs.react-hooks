@@ -1,0 +1,14 @@
+.marginHorizontal {
+  margin: 0 0.5rem;
+}
+
+.marginTop {
+  margin-top: 1rem;
+}
+
+.border {
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  ;
+}
