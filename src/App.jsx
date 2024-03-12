@@ -9,6 +9,7 @@ import UseEffectDemos from './components/useEffect/UseEffectDemos';
 import UseRefDemo from './components/UseRefDemo';
 import UseReducerDemo from './components/useReducer/UseReducerDemo';
 import { UseContextDemo } from './components/useContext/UseContextDemo';
+import UseMemoDemo from './components/useMemo/UseMemoDemo';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/useRef" element={<UseRefDemo />} />
             <Route path="/useReducer" element={<UseReducerDemo />} />
             <Route path="/useContext" element={<UseContextDemo />} />
+            <Route path="/useMemo" element={<UseMemoDemo />} />
             <Route path="*" element={<div>Page inexistante</div>} />
           </Route>
         </Routes>
