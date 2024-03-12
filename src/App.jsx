@@ -6,6 +6,8 @@ import { RouterLayout } from './components/RouterLayout';
 import { Home } from './components/Home';
 import UseStateDemo from './components/UseStateDemo';
 import UseEffectDemos from './components/UseEffectDemos';
+import UseRefDemo from './components/UseRefDemo';
+import UseReducerDemo from './components/UseReducerDemo';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/useState" element={<UseStateDemo />} />
             <Route path="/useEffect" element={<UseEffectDemos />} />
+            <Route path="/useRef" element={<UseRefDemo />} />
+            <Route path="/useReducer" element={<UseReducerDemo />} />
             <Route path="*" element={<div>Page inexistante</div>} />
           </Route>
         </Routes>
