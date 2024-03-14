@@ -11,6 +11,8 @@ import UseReducerDemo from './components/useReducer/UseReducerDemo';
 import { UseContextDemo } from './components/useContext/UseContextDemo';
 import UseMemoDemo from "./components/useMemo/UseMemoDemo";
 import UseCallbackDemo from './components/useCallBack/UseCallbackDemo';
+import MemoDemo from './components/MemoDemo';
+import MyComponent from './MyComponent';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
             <Route path="/useContext" element={<UseContextDemo />} />
             <Route path="/useMemo" element={<UseMemoDemo />} />
             <Route path="/useCallback" element={<UseCallbackDemo />} />
+            <Route path="/memo" element={<MemoDemo />} />
+            <Route path="/test" element={<MyComponent />} />
             <Route path="*" element={<div>Page inexistante</div>} />
           </Route>
         </Routes>

@@ -22,6 +22,12 @@ export const RouterLayout = () => {
         <LinkElement to="/useMemo" text="useMemo" />
         <LinkElement to="/useCallback" text="useCallback" />
       </div>
+      <div>
+        <span>
+          Methods:&nbsp;
+        </span>
+        <LinkElement to="/memo" text="memo" />
+      </div>
       <div className={styles.marginTop}>
         <Outlet />
       </div>
