@@ -5,7 +5,12 @@ import styles from "./Global.module.css";
 const Child = ({componentName, value}) => {
   useEffect(() => console.log(`${componentName} re-rendered val:${value}`));
 
-  return <div >{value}</div>;
+  return (
+    <div className={styles.border}>
+      <div>{componentName}</div>
+      <div>{value}</div>
+    </div>
+  );
 }
 
 const ChildMemo = React.memo(Child);
