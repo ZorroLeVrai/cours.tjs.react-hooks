@@ -6,7 +6,7 @@ import { RouterLayout } from './components/RouterLayout';
 import { Home } from './components/Home';
 import UseStateDemo from './components/useState/UseStateDemo';
 import UseEffectDemos from './components/useEffect/UseEffectDemos';
-import UseRefDemo from './components/UseRefDemo';
+import UseRefDemo from './components/useRef/UseRefDemo';
 import UseReducerDemo from './components/useReducer/UseReducerDemo';
 import { UseContextDemo } from './components/useContext/UseContextDemo';
 import UseMemoDemo from "./components/useMemo/UseMemoDemo";

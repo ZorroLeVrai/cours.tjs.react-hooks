@@ -9,7 +9,7 @@ const UseMemoDemo = () => {
 
   const coordinateObj = { x: 1, y: 1};
   const coordinateMemo = useMemo(() => ({ x: 1, y: 1}), []);
-  let coordinate = isMemoActivated ? coordinateMemo : coordinateObj;
+  const coordinate = isMemoActivated ? coordinateMemo : coordinateObj;
 
   const updateValue = () => setValue(current => !current);
 
