@@ -3,7 +3,9 @@ import UseContextLevel1 from "./UseContextLevel1";
 import styles from "../Global.module.css";
 
 const createContextValue = (val1, val2) => ({value1: val1, value2: val2});
-const DataContext = createContext(createContextValue("",""));
+const myDefaultData = createContextValue("","");
+//myDefaultData est la donnée par défaut en dehors du contexte
+const DataContext = createContext(myDefaultData);
 DataContext.displayName = "DataContext";
 
 const UseContextDemo = () => {
