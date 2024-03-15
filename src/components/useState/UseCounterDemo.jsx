@@ -1,10 +1,10 @@
 // @flow 
 import * as React from 'react';
 import { useState } from 'react';
-import styles from "./Global.module.css";
+import styles from "../Global.module.css";
 import PropTypes from 'prop-types';
 
-const UseStateDemo = ({initialCounter}) => {
+const UseCounterDemo = ({initialCounter}) => {
   const [counter, setCounter] = useState(initialCounter);
 
   const incrementCounter = () => setCounter(current => current + 1);
@@ -12,8 +12,8 @@ const UseStateDemo = ({initialCounter}) => {
   const resetCounter = () => setCounter(0);
 
   return (
-    <div>
-      <p>UseState Demo</p>
+    <div className={styles.border}>
+      <div>UseCounterDemo</div>
       <div>
         Compteur: {counter}
       </div>
@@ -26,12 +26,12 @@ const UseStateDemo = ({initialCounter}) => {
   );
 };
 
-UseStateDemo.propTypes = {
+UseCounterDemo.propTypes = {
   initialCounter: PropTypes.number
 };
 
-UseStateDemo.defaultProps = {
+UseCounterDemo.defaultProps = {
   initialCounter: 0
 };
 
-export default UseStateDemo;
+export default UseCounterDemo;
