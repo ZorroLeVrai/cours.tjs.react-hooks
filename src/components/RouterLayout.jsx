@@ -28,6 +28,15 @@ export const RouterLayout = () => {
         </span>
         <LinkElement to="/memo" text="memo" />
       </div>
+      <div>
+        <span>
+          Forms:&nbsp;
+        </span>
+        <LinkElement to="/formsWithUseRef" text="with useRef" />
+        <LinkElement to="/formsWithUseState" text="with useState" />
+        <LinkElement to="/formsWithUseForm" text="with useForm" />
+        <LinkElement to="/formsWithUseFormAndZod" text="with useForm and Zod" />
+      </div>
       <div className={styles.marginTop}>
         <Outlet />
       </div>

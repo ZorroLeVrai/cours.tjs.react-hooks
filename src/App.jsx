@@ -12,6 +12,10 @@ import { UseContextDemo } from './components/useContext/UseContextDemo';
 import UseMemoDemo from "./components/useMemo/UseMemoDemo";
 import UseCallbackDemo from './components/useCallBack/UseCallbackDemo';
 import MemoDemo from './components/MemoDemo';
+import FormWithUseRef from './components/forms/FormWithUseRef';
+import FormWithUseState from './components/forms/FormWithUseState';
+import FormWithUseForm from './components/forms/FormWithUseForm';
+import FormWithUseFormAndZod from './components/forms/FormWithUseFormAndZod';
 import { MyComponent } from './MyComponent';
 
 function App() {
@@ -29,6 +33,10 @@ function App() {
             <Route path="/useMemo" element={<UseMemoDemo />} />
             <Route path="/useCallback" element={<UseCallbackDemo />} />
             <Route path="/memo" element={<MemoDemo />} />
+            <Route path="/formsWithUseRef" element={<FormWithUseRef/>} />
+            <Route path="/formsWithUseState" element={<FormWithUseState/>} />
+            <Route path="/formsWithUseForm" element={<FormWithUseForm/>} />
+            <Route path="/formsWithUseFormAndZod" element={<FormWithUseFormAndZod/>} />
             <Route path="/test" element={<MyComponent />} />
             <Route path="*" element={<div>Page inexistante</div>} />
           </Route>
