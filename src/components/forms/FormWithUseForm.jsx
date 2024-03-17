@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 
 const FormWithUseForm = () => {
   const [person, setPerson] = useState(null);
-  const { register, handleSubmit, reset, formState: {isValid} } = useForm();
+  const { register, handleSubmit, reset, formState: {isValid, errors} } = useForm();
 
   const onSubmit = (data) => {
     setPerson(data);
@@ -23,6 +23,8 @@ const FormWithUseForm = () => {
         className="form-control"
         required
       />
+      {errors.firstName?.type === "required" && <p className="text-danger">Le champ Prénom est requis</p>}
+      {errors.firstName?.type === "minLength" && <p className="text-danger">Le champ Prénom doit comporter au moins 3 caractères</p>}
     </div>
     <div className="mb-3">
       <label htmlFor="age" className="form-label">
@@ -36,6 +38,7 @@ const FormWithUseForm = () => {
         className="form-control"
         required
       />
+      {errors.age?.type === "required" && <p className="text-danger">Le champ Age est requis</p>}
     </div>
     <button disabled={!isValid} className="btn btn-primary" type="submit">
       Envoi

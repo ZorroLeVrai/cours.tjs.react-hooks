@@ -1,22 +1,8 @@
 import { useState } from "react";
 
 const FormWithUseState = () => {
-  const [person, setPerson] = useState(null);
+  const [person, setPerson] = useState({firstName: "", age: ""});
   const [personSent, setPersonSent] = useState(null);
-
-  const handleFirstNameChange = (event) => {
-    if (person)
-      setPerson({...person, firstName: event.target.value });
-    else
-      setPerson({firstName: event.target.value});
-  };
-
-  const handleAgeChange = (event) => {
-    if (person)
-      setPerson({...person, age: Number(event.target.value) });
-    else
-      setPerson({age: Number(event.target.value) });
-  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -35,7 +21,7 @@ const FormWithUseState = () => {
         type="text"
         className="form-control"
         value={person?.firstName}
-        onChange={handleFirstNameChange}
+        onChange={e => setPerson({...person, firstName: e.target.value })}
         required
       />
     </div>
@@ -49,7 +35,7 @@ const FormWithUseState = () => {
         step="any"
         className="form-control"
         value={person?.age}
-        onChange={handleAgeChange}
+        onChange={e => setPerson({...person, age: Number(e.target.value) })}
         required
       />
     </div>
