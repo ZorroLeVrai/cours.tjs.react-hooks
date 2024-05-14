@@ -4,7 +4,7 @@ import UseReducerSumNumbersDemo from "./UseReducerSumNumbersDemo";
 const UseReducerDemo = () => {
   return ( <>
     <UseReducerSimpleDemo />
-    <UseReducerSumNumbersDemo />
+    {/* <UseReducerSumNumbersDemo /> */}
   </> );
 }
 

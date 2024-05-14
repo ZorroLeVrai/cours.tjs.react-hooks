@@ -4,7 +4,7 @@ import { UseSimpleCounterDemo } from "./UseSimpleCounterDemo";
 const UseStateDemo = () => {
   return ( 
     <>
-      <UseSimpleCounterDemo/>
+      {/* <UseSimpleCounterDemo/> */}
       <UseCounterDemo/>
     </>
    );

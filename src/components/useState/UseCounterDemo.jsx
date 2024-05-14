@@ -1,6 +1,7 @@
 // @flow 
-import * as React from 'react';
 import { useState } from 'react';
+import Counter from './Counter';
+import CounterModifier from './CounterModifier';
 import styles from "../Global.module.css";
 import PropTypes from 'prop-types';
 
@@ -14,14 +15,8 @@ const UseCounterDemo = ({initialCounter}) => {
   return (
     <div className={styles.border}>
       <div>UseCounterDemo</div>
-      <div>
-        Compteur: {counter}
-      </div>
-      <div>
-        <button className={styles.marginHorizontal} onClick={incrementCounter}>+</button>
-        <button className={styles.marginHorizontal} onClick={decrementCounter}>-</button>
-        <button className={styles.marginHorizontal} onClick={resetCounter}>Reset</button>
-      </div>
+      <Counter counter={counter}/>
+      <CounterModifier onIncrement={incrementCounter} onDecrement={decrementCounter} onReset={resetCounter}/>
     </div>
   );
 };
