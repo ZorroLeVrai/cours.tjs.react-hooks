@@ -14,7 +14,8 @@ const schema = z.object({
 
 const FormWithUseFormAndZod = () => {
   const [person, setPerson] = useState(null);
-  const { register, handleSubmit, reset, formState: {errors, isValid} } = useForm({ resolver: zodResolver(schema) });
+  const { register, handleSubmit, reset, formState: {errors, isValid} }
+    = useForm({ resolver: zodResolver(schema) });
 
   const onSubmit = (data) => {
     setPerson(data);
@@ -28,7 +29,7 @@ const FormWithUseFormAndZod = () => {
         Prénom
       </label>
       <input
-        {...register("firstName", {required: true, minLength: 3})}
+        {...register("firstName")}
         id="firstName"
         type="text"
         className="form-control"
@@ -43,7 +44,7 @@ const FormWithUseFormAndZod = () => {
         Age
       </label>
       <input
-        {...register("age", {valueAsNumber: true, required: true})}
+        {...register("age", {valueAsNumber: true})}
         id="age"
         type="number"
         step="any"

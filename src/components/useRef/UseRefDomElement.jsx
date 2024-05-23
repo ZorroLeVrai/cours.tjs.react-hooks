@@ -4,7 +4,9 @@ import styles from "../Global.module.css";
 function UseRefDomElement(){
   const inputRef = useRef(null);
 
-  const setInputFocus = () => inputRef.current.focus();
+  const setInputFocus = () => {
+    inputRef.current.focus();
+  }
 
   return (
     <div className={styles.border}>

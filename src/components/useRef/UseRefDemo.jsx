@@ -10,6 +10,7 @@ const UseRefDemo = () => {
       {active}
       <button onClick={() => setActive(cur => !cur)}>Envoi</button>
       <UseRefSimple />
+      <UseRefDomElement />
     </>);
 }
  

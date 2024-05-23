@@ -1,5 +1,6 @@
 import { useRef, useEffect, memo } from "react";
 import styles from "../Global.module.css";
+import React from "react";
 
 const UseMemoLevel1 = memo(({coord}) => {
   const {x, y} = coord;

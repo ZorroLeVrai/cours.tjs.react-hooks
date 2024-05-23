@@ -4,8 +4,8 @@ import { UseSimpleCounterDemo } from "./UseSimpleCounterDemo";
 const UseStateDemo = () => {
   return ( 
     <>
-      <UseSimpleCounterDemo/>
-      {/* <UseCounterDemo/> */}
+      {/* <UseSimpleCounterDemo/> */}
+      <UseCounterDemo/>
     </>
    );
 }
