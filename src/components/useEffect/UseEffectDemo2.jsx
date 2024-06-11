@@ -3,8 +3,9 @@ import { useEffect, useState } from 'react';
 const UseEffectDemo2 = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
+  const handleClickMove = e => setPosition({x: e.clientX, y: e.clientY});
+
   useEffect(() => {
-    const handleClickMove = e => setPosition({x: e.clientX, y: e.clientY});
     window.addEventListener('pointermove', handleClickMove);
 
     return () => window.removeEventListener('pointermove', handleClickMove);
