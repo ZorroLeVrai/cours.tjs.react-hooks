@@ -43,7 +43,11 @@ const FormWithUseRef = () => {
     <button className="btn btn-primary" type="submit">
       Envoi
     </button>
-    {person && <div><div>Données envoyées:</div><div>Prénom: {person.firstName} - Age: {person.age}</div></div>}
+    {person &&
+      <div>
+        <div>Données envoyées:</div>
+        <div>Prénom: {person.firstName} - Age: {person.age}</div>
+      </div>}
   </form>
   );
 }
