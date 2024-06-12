@@ -1,12 +1,8 @@
-import { createContext, useState } from 'react';
+import { useState } from 'react';
 import UseContextLevel1 from "./UseContextLevel1";
 import styles from "../Global.module.css";
+import { createContextValue, DataContext } from './DataContext';
 
-const createContextValue = (val1, val2) => ({value1: val1, value2: val2});
-const myDefaultData = createContextValue("","");
-//myDefaultData est la donnée par défaut en dehors du contexte
-const DataContext = createContext(myDefaultData);
-DataContext.displayName = "DataContext";
 
 const UseContextDemo = () => {
   const [inputData, setInputData] = useState(() => createContextValue("", ""));
