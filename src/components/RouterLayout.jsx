@@ -21,6 +21,7 @@ export const RouterLayout = () => {
         <LinkElement to="/useContext" text="useContext" />
         <LinkElement to="/useMemo" text="useMemo" />
         <LinkElement to="/useCallback" text="useCallback" />
+        <LinkElement to="/hoc" text="HOC" />
       </div>
       <div>
         <span>

@@ -17,6 +17,7 @@ import FormWithUseState from './components/forms/FormWithUseState';
 import FormWithUseForm from './components/forms/FormWithUseForm';
 import FormWithUseFormAndZod from './components/forms/FormWithUseFormAndZod';
 import { MyComponent } from './MyComponent';
+import TestHoc from './components/hoc/TestHoc';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path="/formsWithUseState" element={<FormWithUseState/>} />
             <Route path="/formsWithUseForm" element={<FormWithUseForm/>} />
             <Route path="/formsWithUseFormAndZod" element={<FormWithUseFormAndZod/>} />
+            <Route path="/hoc" element={<TestHoc/>} />
             <Route path="/test" element={<MyComponent />} />
             <Route path="*" element={<div>Page inexistante</div>} />
           </Route>

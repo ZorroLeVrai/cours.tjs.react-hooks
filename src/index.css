@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.border {
+  border: 1px solid black;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
