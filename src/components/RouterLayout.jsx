@@ -21,6 +21,7 @@ export const RouterLayout = () => {
         <LinkElement to="/useContext" text="useContext" />
         <LinkElement to="/useMemo" text="useMemo" />
         <LinkElement to="/useCallback" text="useCallback" />
+        <LinkElement to="/customHooks" text="custom hooks" />
         <LinkElement to="/hoc" text="HOC" />
       </div>
       <div>
@@ -28,6 +29,7 @@ export const RouterLayout = () => {
           Methods:&nbsp;
         </span>
         <LinkElement to="/memo" text="memo" />
+        <LinkElement to="/utilityFunction" text="send API request" />
       </div>
       <div>
         <span>
