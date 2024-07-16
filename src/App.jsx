@@ -43,7 +43,8 @@ function App() {
             <Route path="/formsWithUseFormAndZod" element={<FormWithUseFormAndZod/>} />
             <Route path="/utilityFunction" element={<UtilityFunctionDemo/>} />
             <Route path="/hoc" element={<TestHoc/>} />
-            <Route path="/customHooks" element={<ArrayDemo/>} />
+            <Route path="/customHooks/useArray" element={<ArrayDemo/>} />
+            <Route path="/customHooks/useToggle" element={<ToggleDemo/>} />
             <Route path="/test" element={<MyComponent />} />
             <Route path="*" element={<div>Page inexistante</div>} />
           </Route>

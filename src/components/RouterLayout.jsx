@@ -21,8 +21,14 @@ export const RouterLayout = () => {
         <LinkElement to="/useContext" text="useContext" />
         <LinkElement to="/useMemo" text="useMemo" />
         <LinkElement to="/useCallback" text="useCallback" />
-        <LinkElement to="/customHooks" text="custom hooks" />
         <LinkElement to="/hoc" text="HOC" />
+      </div>
+      <div>
+        <span>
+          Custom Hooks:&nbsp;
+        </span>
+        <LinkElement to="/customHooks/useArray" text="useArray" />
+        <LinkElement to="/customHooks/useToggle" text="useToggle" />
       </div>
       <div>
         <span>
