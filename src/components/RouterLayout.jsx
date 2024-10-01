@@ -29,6 +29,7 @@ export const RouterLayout = () => {
         </span>
         <LinkElement to="/customHooks/useArray" text="useArray" />
         <LinkElement to="/customHooks/useToggle" text="useToggle" />
+        <LinkElement to="/customHooks/useFetch" text="useFetch" />
       </div>
       <div>
         <span>

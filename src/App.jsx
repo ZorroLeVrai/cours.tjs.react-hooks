@@ -21,6 +21,7 @@ import TestHoc from './components/hoc/TestHoc';
 import UtilityFunctionDemo from './components/utilityFunction/UtilityFunctionDemo';
 import ToggleDemo from './components/useCustomHooks/ToggleDemo';
 import ArrayDemo from './components/useCustomHooks/ArrayDemo';
+import UseFetchDemo from './components/useCustomHooks/UseFetchDemo';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
             <Route path="/hoc" element={<TestHoc/>} />
             <Route path="/customHooks/useArray" element={<ArrayDemo/>} />
             <Route path="/customHooks/useToggle" element={<ToggleDemo/>} />
+            <Route path="/customHooks/useFetch" element={<UseFetchDemo/>} />
             <Route path="/test" element={<MyComponent />} />
             <Route path="*" element={<div>Page inexistante</div>} />
           </Route>
