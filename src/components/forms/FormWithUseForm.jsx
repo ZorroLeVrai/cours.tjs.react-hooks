@@ -20,7 +20,7 @@ const FormWithUseForm = () => {
         {...register("firstName", {required: true, minLength: 3})}
         id="firstName"
         type="text"
-        className="form-control"
+        className="form-control" 
         required
       />
       {errors.firstName?.type === "required" && <p className="text-danger">Le champ Prénom est requis</p>}

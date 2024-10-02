@@ -22,6 +22,7 @@ import UtilityFunctionDemo from './components/utilityFunction/UtilityFunctionDem
 import ToggleDemo from './components/useCustomHooks/ToggleDemo';
 import ArrayDemo from './components/useCustomHooks/ArrayDemo';
 import UseFetchDemo from './components/useCustomHooks/UseFetchDemo';
+import UseRefDomElement from './components/useRef/UseRefDomElement';
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/useState" element={<UseStateDemo />} />
             <Route path="/useEffect" element={<UseEffectDemos />} />
-            <Route path="/useRef" element={<UseRefDemo />} />
+            <Route path="/useRef" element={<UseRefDomElement />} />
             <Route path="/useReducer" element={<UseReducerDemo />} />
             <Route path="/useContext" element={<UseContextDemo />} />
             <Route path="/useMemo" element={<UseMemoDemo />} />
