@@ -11,11 +11,11 @@ const UseEffectDemo2 = () => {
     return () => window.removeEventListener('pointermove', handleClickMove);
   }, []);
 
-  const displayPosition = () => `(${Math.round(position.x)}, ${Math.round(position.y)})`;
+  const displayPosition = `(${Math.round(position.x)}, ${Math.round(position.y)})`;
 
   return (
     <div>
-      Position: {displayPosition()}
+      Position: {displayPosition}
     </div>);
 };
 

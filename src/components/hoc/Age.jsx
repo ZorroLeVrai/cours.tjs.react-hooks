@@ -3,7 +3,7 @@ import withToolTip from './withToolTip';
 
 const Age = ({age}) => {
     return (
-        <span data-testid="age_label" className="padding-medium border-light border">Votre age: {age}</span>
+        <span data-testid="age_label" className="padding-medium border-dark border">Votre age: {age}</span>
     );
 }
 
